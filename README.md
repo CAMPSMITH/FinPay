@@ -64,6 +64,11 @@ conda install streamlit
 ## Demo
 
 
+
+https://user-images.githubusercontent.com/9788128/180631388-763e1d35-609d-4197-bec4-066c8be272f8.mov
+
+
+
 ### Selecting a FinTech Professional
 The following screenshot shows how a Fintech professional is selected and how the hours for the job are inputted.  Notice that the wage is calculated. 
 ![select fintech professional](/images/finpay_select_professional.png)
