@@ -35,12 +35,54 @@ pip install bip44
 
 For instructions on installing Ganache in your local environment, follow the directions in the [Ganache Download Page](https://www.trufflesuite.com/ganache).
 
+### Install Streamlit
+If streamlit is not installed in your vm, install it with
+```
+conda install streamlit
+```
 
 ---
 
 ## Usage
 
-TBD ...
+1. Start Ganache Quickstart.
+2. Copy the **mnemonic** from Ganache and store it in a **.env** file as shown below
+
+    .env
+    ```
+    MNEMONIC="<the mnemonic phrase from Ganache>"
+    ```
+
+3. start the application
+
+    ```
+    streamlit src/fintech_finder.py
+    ```
+    
+---
+
+## Demo
+
+
+### Selecting a FinTech Professional
+The following screenshot shows how a Fintech professional is selected and how the hours for the job are inputted.  Notice that the wage is calculated. 
+![select fintech professional](/images/finpay_select_professional.png)
+
+### Pay FinTech Professional
+After the Fintech professional is selected and hours are inputted, the payment transaction can be executed by pressing the **Send Transaction**  button.  Notice that the transaction hash is shown after the tansaction is submitted.
+![pay fintech professional](/images/finpay_pay_professional.png)
+
+### Payment Transaction
+The payment transaction can be viewed from the Ganache Transaction screen.
+![payment transaction](/images/finpay_transaction.png)
+
+### Sender Account Balance/History
+The sender's account balance is decremented by the amount of the transaction.  The number of transaction this sender has sent is shown on the right.
+![sender balance](/images/finpay_sender_balance.png)
+
+### Receiver Account Balance/History
+The receiver's account balance is incremented by the amount of the transaction.  The number of transaction this receiver has sent is shown on the right.
+![receiver balance](/images/finpay_receiver_balance.png)
 
 ---
 
